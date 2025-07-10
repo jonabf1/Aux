@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Lançamentos</title>
+<style>
+    /* Container isolado */
+    .lanc-container{
+        font-family:"Helvetica Neue",Arial,sans-serif;
+        margin:40px;
+        background:#fff;
+        color:#000;
+    }
+    .lanc-title{
+        font-size:1.75rem;
+        margin-bottom:28px;
+    }
+    .lanc-table{
+        width:972px;              /* largura fixa */
+        border-collapse:collapse;
+        font-size:0.9rem;
+    }
+    /* Cabeçalho */
+    .lanc-table thead{
+        border-bottom:2px solid #000;   /* divisor único contínuo */
+    }
+    .lanc-header-cell{
+        background:#e0e0e0;
+        font-weight:bold;
+        padding:6px 8px;
+        text-align:left;
+        /* sem borda individual, linha já está no thead */
+    }
+
+    /* Corpo */
+    .lanc-cell,
+    .lanc-code,
+    .lanc-value{
+        background:#fff;
+        padding:6px 8px;
+        border-bottom:1px solid #bdbdbd;
+        vertical-align:top;
+    }
+    .lanc-value{
+        text-align:right;
+        white-space:nowrap;
+        font-variant-numeric:tabular-nums;
+    }
+    .lanc-code{
+        font-family:"Courier New",monospace;
+        font-size:0.8rem;
+        white-space:pre-wrap;
+    }
+
+    /* Remover borda inferior do último item */
+    .lanc-table tbody tr:last-child .lanc-cell,
+    .lanc-table tbody tr:last-child .lanc-value,
+    .lanc-table tbody tr:last-child .lanc-code{
+        border-bottom:none;
+    }
+</style>
+</head>
+<body class="lanc-container">
+<h1 class="lanc-title">Lançamentos</h1>
+<table class="lanc-table">
+<thead>
+<tr>
+<th class="lanc-header-cell">Data</th>
+<th class="lanc-header-cell">Hora</th>
+<th class="lanc-header-cell">Nome</th>
+<th class="lanc-header-cell">CPF/CNPJ</th>
+<th class="lanc-header-cell">TXID</th>
+<th class="lanc-header-cell">DOCTO</th>
+<th class="lanc-header-cell">Crédito</th>
+<th class="lanc-header-cell">Débito</th>
+<th class="lanc-header-cell">Identificação (End‑to‑end)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="lanc-cell">07/JUL</td>
+<td class="lanc-cell">15:34:06</td>
+<td class="lanc-cell">NET EMPRESA TESTE 07 G</td>
+<td class="lanc-cell">01.560.463/200‑131</td>
+<td class="lanc-cell">***</td>
+<td class="lanc-cell">1534060</td>
+<td class="lanc-value">R$ 0,00</td>
+<td class="lanc-value">R$ 12,34</td>
+<td class="lanc-code">D60746948202 507071834a3995a3yH2Q</td>
+</tr>
+
+<tr>
+<td class="lanc-cell">07/JUL</td>
+<td class="lanc-cell">14:22:12</td>
+<td class="lanc-cell">PAULO NUNES FERREIRA</td>
+<td class="lanc-cell">440.667.378‑46</td>
+<td class="lanc-cell">***</td>
+<td class="lanc-cell">1422120</td>
+<td class="lanc-value">R$ 0,00</td>
+<td class="lanc-value">R$ 56,21</td>
+<td class="lanc-code">E60746948202 507071721X3995Z0nJKY</td>
+</tr>
+
+<tr>
+<td class="lanc-cell">07/JUL</td>
+<td class="lanc-cell">14:00:40</td>
+<td class="lanc-cell">CADASTRO NPC TOKEN TU DOIS TRES</td>
+<td class="lanc-cell">07.398.788/386‑096</td>
+<td class="lanc-cell">***</td>
+<td class="lanc-cell">1400402</td>
+<td class="lanc-value">R$ 0,00</td>
+<td class="lanc-value">R$ 65,24</td>
+<td class="lanc-code">E60746948202 507071659X399sXus4OA</td>
+</tr>
+
+<tr>
+<td class="lanc-cell">07/JUL</td>
+<td class="lanc-cell">13:59:23</td>
+<td class="lanc-cell">DERE DERE RERE<br>DERE RERE DERE<br>DERE RERE DE</td>
+<td class="lanc-cell">06.752.738/200‑187</td>
+<td class="lanc-cell">***</td>
+<td class="lanc-cell">1399239</td>
+<td class="lanc-value">R$ 0,00</td>
+<td class="lanc-value">R$ 1,55</td>
+<td class="lanc-code">D60746948202 507071659a399s6u6dks</td>
+</tr>
+
+<tr>
+<td class="lanc-cell">05/JUL</td>
+<td class="lanc-cell">19:08:04</td>
+<td class="lanc-cell">EMPRESA GINEVRA TDM KUMARK</td>
+<td class="lanc-cell">01.587.047/600‑150</td>
+<td class="lanc-cell">***</td>
+<td class="lanc-cell">1908045</td>
+<td class="lanc-value">R$ 0,00</td>
+<td class="lanc-value">R$ 98,76</td>
+<td class="lanc-code">E60746948202 507052207X39995U0ta0Q</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
