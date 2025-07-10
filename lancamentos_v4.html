@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Lançamentos</title>
+<style>
+    body{
+        font-family:"Helvetica Neue",Arial,sans-serif;
+        margin:40px;
+        background:#fff;
+        color:#000;
+    }
+    h1{
+        font-size:1.75rem;
+        margin-bottom:28px;
+    }
+    table{
+        width:972px;              /* largura fixa */
+        border-collapse:collapse;
+        font-size:0.9rem;
+    }
+    thead th{
+        background:#e0e0e0;       /* cinza para o header */
+        font-weight:bold;
+        padding:6px 8px;
+        border-bottom:2px solid #000;
+        text-align:left;
+    }
+    tbody td{
+        background:#fff;          /* corpo branco */
+        padding:6px 8px;
+        border-bottom:1px solid #bdbdbd;
+        vertical-align:top;
+    }
+    /* colunas de valores (Crédito/Débito) brancas + alinhamento à direita */
+    td.value{
+        background:#fff;
+        text-align:right;
+        white-space:nowrap;
+        font-variant-numeric:tabular-nums;
+    }
+    td.code{
+        font-family:"Courier New",monospace;
+        font-size:0.8rem;
+        white-space:pre-wrap;
+    }
+    /* remover borda do último item */
+    tbody tr:last-child td{
+        border-bottom:none;
+    }
+</style>
+</head>
+<body>
+<h1>Lançamentos</h1>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Hora</th>
+<th>Nome</th>
+<th>CPF/CNPJ</th>
+<th>TXID</th>
+<th>DOCTO</th>
+<th>Crédito</th>
+<th>Débito</th>
+<th>Identificação (End‑to‑end)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07/JUL</td>
+<td>15:34:06</td>
+<td>NET EMPRESA TESTE 07 G</td>
+<td>01.560.463/200‑131</td>
+<td>***</td>
+<td>1534060</td>
+<td class="value">R$ 0,00</td>
+<td class="value">R$ 12,34</td>
+<td class="code">D60746948202 507071834a3995a3yH2Q</td>
+</tr>
+
+<tr>
+<td>07/JUL</td>
+<td>14:22:12</td>
+<td>PAULO NUNES FERREIRA</td>
+<td>440.667.378‑46</td>
+<td>***</td>
+<td>1422120</td>
+<td class="value">R$ 0,00</td>
+<td class="value">R$ 56,21</td>
+<td class="code">E60746948202 507071721X3995Z0nJKY</td>
+</tr>
+
+<tr>
+<td>07/JUL</td>
+<td>14:00:40</td>
+<td>CADASTRO NPC TOKEN TU DOIS TRES</td>
+<td>07.398.788/386‑096</td>
+<td>***</td>
+<td>1400402</td>
+<td class="value">R$ 0,00</td>
+<td class="value">R$ 65,24</td>
+<td class="code">E60746948202 507071659X399sXus4OA</td>
+</tr>
+
+<tr>
+<td>07/JUL</td>
+<td>13:59:23</td>
+<td>DERE DERE RERE<br>DERE RERE DERE<br>DERE RERE DE</td>
+<td>06.752.738/200‑187</td>
+<td>***</td>
+<td>1399239</td>
+<td class="value">R$ 0,00</td>
+<td class="value">R$ 1,55</td>
+<td class="code">D60746948202 507071659a399s6u6dks</td>
+</tr>
+
+<tr>
+<td>05/JUL</td>
+<td>19:08:04</td>
+<td>EMPRESA GINEVRA TDM KUMARK</td>
+<td>01.587.047/600‑150</td>
+<td>***</td>
+<td>1908045</td>
+<td class="value">R$ 0,00</td>
+<td class="value">R$ 98,76</td>
+<td class="code">E60746948202 507052207X39995U0ta0Q</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
